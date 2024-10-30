@@ -24,3 +24,13 @@
     const obj = {a: 1, b: 2, c: 3};
     const entries = Object.entries(obj); // [['a', 1], ['b', 2], ['c', 3]]
     ```
+
+## 4. Object.assign()
+- *Purpose*: Copies the values of all enumerable own properties from one or more source objects to a target object.
+- *Returns*: The target object.
+- *Example*:
+    ```js
+    const target = {a: 1};
+    const source = {b: 2};
+    const result = Object.assign(target, source); // {a: 1, b: 2}
+    ```
