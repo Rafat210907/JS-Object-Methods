@@ -34,3 +34,12 @@
     const source = {b: 2};
     const result = Object.assign(target, source); // {a: 1, b: 2}
     ```
+## 5. Object.freeze()
+- *Purpose*: Freezes an object, preventing new properties from being added and existing properties from being modified or deleted.
+- *Returns*: The frozen object.
+- *Example*:
+    ```js
+    const obj = {a: 1};
+    Object.freeze(obj);
+    obj.a = 2; // Error in strict mode, ignored otherwise
+    ```
