@@ -43,3 +43,13 @@
     Object.freeze(obj);
     obj.a = 2; // Error in strict mode, ignored otherwise
     ```
+## 6. Object.seal()
+- *Purpose*: Seals an object, preventing new properties from being added, but allows modification of existing properties.
+- *Returns*: The sealed object.
+- *Example*:
+    ```js
+    const obj = {a: 1};
+    Object.seal(obj);
+    obj.a = 2; // Works
+    obj.b = 3; // Fails
+    ```
